@@ -11,7 +11,7 @@ export default {
   },
 
   getOne: id => {
-    return service.get("/" + id);
+    return service.get("/beers/" + id);
   },
   getRandom: () => {
     return service.get("/random");
@@ -19,7 +19,7 @@ export default {
   createNew: () => {
     return service.post("/new");
   }
-  // searchQuery: () => {
-  //   return service.get(`/search?q=${query}`);
+  // getQuery: () => {
+  //   return service.get("/search?q=${query}");
   // }
 };

@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .navBar {
+    height: 5vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #33c3ff;
+    margin-bottom: 1px;
+
+    .fa-home {
+      color: #fff;
+      font-size: 2.3em;
+    }
+  }
+  .homePage {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    .beers-container {
+      width: 50%;
+      h3 {
+        text-align: left;
+        font-weight: 300;
+        font-size: 2.3em;
+      }
+      p {
+        text-align: left;
+        color: rgba(0, 0, 0, 0.3);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+  .beer-list-container {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    .beer-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    .img-container {
+      display: flex;
+      align-content: flex-start;
+      align-items: flex-start;
+
+      img {
+        width: 20%;
+      }
+    }
+    .list-text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+  }
+  .one-beer {
+    min-height: 100vh;
+  }
+}
