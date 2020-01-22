@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import beersAPI from "../API/beersAPI";
 import { NavLink } from "react-router-dom";
+import Search from "./../components/Search";
 
 const ListBeer = () => {
   const [beers, setBeers] = useState([]);
@@ -17,6 +18,7 @@ const ListBeer = () => {
   }, []);
   return (
     <div>
+      <Search />
       {beers.length === 0 ? (
         <div>..Loading</div>
       ) : (

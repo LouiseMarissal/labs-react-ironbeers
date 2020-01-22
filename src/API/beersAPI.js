@@ -18,8 +18,8 @@ export default {
   },
   createNew: () => {
     return service.post("/new");
+  },
+  getQuery: () => {
+    return service.get("/search?q=${query}");
   }
-  // getQuery: () => {
-  //   return service.get("/search?q=${query}");
-  // }
 };

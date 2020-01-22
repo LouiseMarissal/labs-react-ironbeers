@@ -30,11 +30,13 @@ body {
   flex-direction: column;
 
   .homePage {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: center;
+
     .beers-container {
       width: 100%;
       border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -178,6 +180,13 @@ body {
       border-radius: 20px;
       background-color: #33c3ff;
       border: none;
+    }
+  }
+  .search {
+    input {
+      margin: 3%;
+      border-radius: 20px;
+      width: 450px;
     }
   }
 }

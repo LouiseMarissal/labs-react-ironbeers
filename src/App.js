@@ -7,6 +7,7 @@ import SingleBeer from "./views/SingleBeer";
 import ListBeer from "./views/ListBeer";
 import RandomBeer from "./views/RandomBeer";
 import NewBeer from "./views/NewBeer";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/beers" component={ListBeer} />
         <Route path="/random-beer" component={RandomBeer} />
         <Route path="/new-beer" component={NewBeer} />
+        <Route path="/search?q=${query}" component={Search} />
       </Switch>
     </div>
   );
