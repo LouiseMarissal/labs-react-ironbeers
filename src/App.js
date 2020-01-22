@@ -14,8 +14,8 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/beers/:id" component={SingleBeer} />
         <Route path="/beers" component={ListBeer} />
-        <Route exact path="beers/:id" component={SingleBeer} />
         <Route path="/random-beer" component={RandomBeer} />
         <Route path="/new-beer" component={NewBeer} />
       </Switch>

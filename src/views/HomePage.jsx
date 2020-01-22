@@ -16,7 +16,7 @@ const HomePage = () => {
         </NavLink>
       </div>
       <div className="beers-container">
-        <NavLink to="/random-beers">
+        <NavLink to="/random-beer">
           <img src="./images/random-beer.png" alt="random beer" />
           <h3>Random Beer</h3>
           <p>

@@ -11,7 +11,7 @@ export default {
   },
 
   getOne: id => {
-    return service.get("/beers/" + id);
+    return service.get(id);
   },
   getRandom: () => {
     return service.get("/random");
